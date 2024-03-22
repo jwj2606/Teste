@@ -23,6 +23,13 @@ A partir dessa interface, o usuário poderá realizar as seguintes ações:
 ## Modelo Arquitetura
 [![](https://mermaid.ink/img/pako:eNqNkkFu2zAQRa8y4CoBLAPJ0osCSuQ0dus4gNRNpSzG4igmQHFUikxRSD5NFzlAj-CLlZLhJg4SoNKGePP_8JOcTpQsScxEpflnuUXrIEsKA-GL87hp4MaycXMjHyCKPvUt2Se1f-YeFp2kFivFkSOF07FQ0tS1u1F4ARFY-uGpdT1cncX3C8jmi_j849Yl1w0bMo56WHYSJbeRw42m6b_K0P3jBmEr65232MOXzuDTBu3_qb92FbOjo_oKBgFcny3T9R0kcbJOzw-ovxxP1YY07ZASDobrsZjksd74Ghby4TWe52_ATZ4pp-mEfc6_WX1CbvNs6-uNQaXhpbYco9f7P9Lr8AarcE0Ox0sKwVbosmGZBJKytyXt3nXddQ0-KoP75_1vPvjuR-DYvu9Yd2wlnThSti6Ijz-AmIiabI1KhmHqBlIIt6WaCjELS0kVeu0KUZhdkKJ3nP4ypZiFV6CJ8E04CSUKHy3WYlahbgMlqUKm1WFAxzmdiAbNd-ajZvcXourqow?type=png)](https://mermaid.live/edit#pako:eNqNkkFu2zAQRa8y4CoBLAPJ0osCSuQ0dus4gNRNpSzG4igmQHFUikxRSD5NFzlAj-CLlZLhJg4SoNKGePP_8JOcTpQsScxEpflnuUXrIEsKA-GL87hp4MaycXMjHyCKPvUt2Se1f-YeFp2kFivFkSOF07FQ0tS1u1F4ARFY-uGpdT1cncX3C8jmi_j849Yl1w0bMo56WHYSJbeRw42m6b_K0P3jBmEr65232MOXzuDTBu3_qb92FbOjo_oKBgFcny3T9R0kcbJOzw-ovxxP1YY07ZASDobrsZjksd74Ghby4TWe52_ATZ4pp-mEfc6_WX1CbvNs6-uNQaXhpbYco9f7P9Lr8AarcE0Ox0sKwVbosmGZBJKytyXt3nXddQ0-KoP75_1vPvjuR-DYvu9Yd2wlnThSti6Ijz-AmIiabI1KhmHqBlIIt6WaCjELS0kVeu0KUZhdkKJ3nP4ypZiFV6CJ8E04CSUKHy3WYlahbgMlqUKm1WFAxzmdiAbNd-ajZvcXourqow)
 
+## ⚠️ Problemas enfrentados
+Como tive que fazer o projeto na maior parte do tempo no meu ambiente do trabalho, tive algumas limitações com relação às versões disponíveis do NodeJs e do Angular, o que reduziu as possibilidades de recursos à disposição no tocante aos datatables e estilos.
+
+Outra limitação foi com relação ao repositorio para baixar os módulos disponibilizado pela empresa - http://binario.caixa:8081/repository/npm-all/, onde tive que alterar para o repositório http://registry.npmjs.org/ mas estando conectado em rede de internet privada.
+
+Minha idéia para o projeto era permitir ao usuário colocar qualquer endereço de uma api que retornasse um json com dados , para que o app consumisse e de forma dinâmica, renderizasse as colunas, mas diante do tempo dedicado a essas dificuldades acima relatadas, acabou não sendo possível.
+
 # Tecnologias utilizadas
 ## Front end
 - HTML / CSS / JS / TypeScript
@@ -67,6 +74,8 @@ Execute ng test para executar os testes unitários via Karma.
 # Como executar testes ponta a ponta
 Execute ng e2e para executar os testes ponta a ponta via Protactor.
 
+# Further help
+Para obter mais ajuda sobre o Angular CLI, use ng help ou confira o README do Angular CLI.
 
 ```
 
