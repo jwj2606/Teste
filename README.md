@@ -27,7 +27,9 @@ A partir dessa interface, o usuário poderá realizar as seguintes ações:
 ## Front end
 - HTML / CSS / JS / TypeScript
 - Angular CLI
-- NodeJs
+- NodeJs 12.18.1
+- Git versão 2.16
+- Visual Studio Code 1.76.1
 
 ## Implantação em produção
 - Front end web: AWS S3
@@ -35,20 +37,41 @@ A partir dessa interface, o usuário poderá realizar as seguintes ações:
 # Como executar o projeto
 
 ## Front end web
-Pré-requisitos: npm
+Pré-requisitos: npm, git
+
+# inicialização git
+Na pasta desejada, executar o comando git init, antes de clonar o repositorio
 
 # clonar repositório
 git clone https://github.com/jwj2606/desafioTeia_c086047.git
 
 # entrar na pasta do projeto 
-cd desafio-teia-frontend
+cd desafioTeia_c086047
 
 # instalar dependências
 npm install
 
+# instalar atualizações
+npm update
+
 # executar o projeto
 npm start
+
+# Como fazer a build do projeto
+Execute ng build (ou em caso de falha npm run-script build) para construir o projeto. 
+Os artefatos de construção serão armazenados no diretório dist/. Use o sinalizador --prod para uma compilação de produção.
+
+# Como executar testes unitários
+Execute ng test para executar os testes unitários via Karma.
+
+# Como executar testes ponta a ponta
+Execute ng e2e para executar os testes ponta a ponta via Protactor.
+
+
 ```
+
+
+
 
 # Autor
 Jonathan Barroso Félix
