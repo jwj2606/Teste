@@ -17,8 +17,9 @@ A partir dessa interface, o usuário poderá realizar as seguintes ações:
 - Possibilidade de testar a exclusão de todos os dados, assim como carregar novamente os dados
 - Possibilidade de exportação dos dados nos formatos excel, csv, json e txt
 
-## Layout App
-![Mobile 1](https://github.com/desafioTeia_c086047/tree/main/src/imgApp.png) 
+## Layout App]
+<img src="https://github.com/jwj2606/desafioTeia_c086047/blob/main/src/imgApp.png" alt="Texto Alternativo">
+
 
 # Tecnologias utilizadas
 ## Back end
