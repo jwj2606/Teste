@@ -1,0 +1,66 @@
+<div style="text-align: right;">
+<mat-form-field>
+  <mat-label>Pesquisa Livre</mat-label>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Ex. ium">
+</mat-form-field>
+</div>
+
+<div style="text-align: center;">
+  <button mat-raised-button-danger  (click)="clearTable()" class="btn btn-danger">Limpar Tabela</button>
+  &nbsp;&nbsp;<button mat-raised-button-success class="btn btn-success" (click)="addData()">Preencher Tabela - Dados API</button>
+  &nbsp;&nbsp;<button mat-raised-button  (click)="exporter.exportTable('xlsx', {fileName:'javatechiecovid19'})">Gerar Excel</button>
+  &nbsp;&nbsp;<button mat-raised-button  (click)="exporter.exportTable('csv', {fileName:'javatechiecovid19'})">Gerar Csv</button>
+  &nbsp;&nbsp;<button mat-raised-button  (click)="exporter.exportTable('json', {fileName:'javatechiecovid19'})">Gerar Json</button>
+  &nbsp;&nbsp;<button mat-raised-button  (click)="exporter.exportTable('txt', {fileName:'javatechiecovid19'})">Gerar Txt</button>
+</div>
+<div class="row justify-content-md-center">
+  
+  <div class="row" *ngIf="!showTable">
+    <div class="offset-md-2 col-md-7 text-center">
+      <div  class="spinner-border" role="status"></div>
+    </div>
+  </div>
+
+<table class="table table-striped table-responsive" mat-table matTableExporter [dataSource]="dataSource" #exporter="matTableExporter" [hiddenColumns]="[0]" matSort>
+
+  
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="albumId">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Album Id</th>
+      <td mat-cell *matCellDef="let element"> {{element.albumId}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+      <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="url">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Url </th>
+      <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+    </ng-container>
+  
+     <!-- Position Column -->
+     <ng-container matColumnDef="thumbnailUrl">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Thumbnail Url </th>
+        <td mat-cell *matCellDef="let element"> {{element.thumbnailUrl}} </td>
+      </ng-container>
+    
+      
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

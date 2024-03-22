@@ -1,4 +1,290 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+  background-color: #eee;
+  color: #3C4858;
+  font-weight: 300;
+}
+
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+  margin: 8px;
+}
+
+.header-1 .wrapper,
+.header-2 .wrapper,
+.header-3 .wrapper {
+  background: #CCCCCC;
+}
+
+.rtl .main-panel {
+  float: left;
+}
+.rtl .main-panel .card-header-text .card-text {
+  float: right;
+}
+
+.rtl .main-panel .card-header-text .card-text .card-title,
+.rtl .main-panel .card-header-text .card-text .card-category {
+  text-align: right;
+}
+
+.main-panel {
+  position: relative;
+  float: center;
+  width: 95%;
+  transition: 0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+.main-panel>.content {
+  padding: 30px 15px;
+  min-height: calc(100vh - 123px);
+}
+
+
+.main-panel>.footer {
+  border-top: 1px solid #e7e7e7;
+}
+
+.main-panel>.navbar {
+  margin-bottom: 0;
+}
+
+.main-panel .header {
+  margin-bottom: 30px;
+}
+
+.main-panel .header .title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-panel {
+  width: 100%;
+}
+
+.offline-doc .page-header .content-center {
+  z-index: 3;
+}
+
+.offline-doc .page-header .content-center .brand .title {
+  color: #fff;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@-webkit-keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border .75s linear infinite;
+  animation: spinner-border .75s linear infinite; }
+
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em; }
+
+@-webkit-keyframes spinner-grow {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  50% {
+    opacity: 1; } }
+
+@keyframes spinner-grow {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  50% {
+    opacity: 1; } }
+
+.spinner-grow {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  background-color: currentColor;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: spinner-grow .75s linear infinite;
+  animation: spinner-grow .75s linear infinite; }
+
+.spinner-grow-sm {
+  width: 1rem;
+  height: 1rem; }
+
+
+  @media (min-width: 768px) {
+    .col-md {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    .col-md-auto {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: none;
+    }
+    .col-md-1 {
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%;
+    }
+    .col-md-2 {
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
+    .col-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .col-md-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+    .col-md-5 {
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-md-7 {
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%;
+    }
+    .col-md-8 {
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+    }
+    .col-md-9 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+    .col-md-10 {
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%;
+    }
+    .col-md-11 {
+      flex: 0 0 91.666667%;
+      max-width: 91.666667%;
+    }
+    .col-md-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .order-md-first {
+      order: -1;
+    }
+    .order-md-last {
+      order: 13;
+    }
+    .order-md-0 {
+      order: 0;
+    }
+    .order-md-1 {
+      order: 1;
+    }
+    .order-md-2 {
+      order: 2;
+    }
+    .order-md-3 {
+      order: 3;
+    }
+    .order-md-4 {
+      order: 4;
+    }
+    .order-md-5 {
+      order: 5;
+    }
+    .order-md-6 {
+      order: 6;
+    }
+    .order-md-7 {
+      order: 7;
+    }
+    .order-md-8 {
+      order: 8;
+    }
+    .order-md-9 {
+      order: 9;
+    }
+    .order-md-10 {
+      order: 10;
+    }
+    .order-md-11 {
+      order: 11;
+    }
+    .order-md-12 {
+      order: 12;
+    }
+    .offset-md-0 {
+      margin-left: 0;
+    }
+    .offset-md-1 {
+      margin-left: 8.333333%;
+    }
+    .offset-md-2 {
+      margin-left: 16.666667%;
+    }
+    .offset-md-3 {
+      margin-left: 25%;
+    }
+    .offset-md-4 {
+      margin-left: 33.333333%;
+    }
+    .offset-md-5 {
+      margin-left: 41.666667%;
+    }
+    .offset-md-6 {
+      margin-left: 50%;
+    }
+    .offset-md-7 {
+      margin-left: 58.333333%;
+    }
+    .offset-md-8 {
+      margin-left: 66.666667%;
+    }
+    .offset-md-9 {
+      margin-left: 75%;
+    }
+    .offset-md-10 {
+      margin-left: 83.333333%;
+    }
+    .offset-md-11 {
+      margin-left: 91.666667%;
+    }
+  }
+  

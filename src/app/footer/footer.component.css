@@ -1,0 +1,3 @@
+.footer { display: flex; justify-content: flex-start; align-items: center; padding: 1.25rem; height: 60px; font-family: futura; color: #48586c; background: #EFF5F6; }
+.footer > * { padding-right: 1.25rem; }
+.footer > *:last-child {padding-right: 0; }

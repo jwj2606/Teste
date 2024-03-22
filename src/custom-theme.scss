@@ -12,17 +12,19 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$javatechie-covid19-tracker-primary: mat-palette($mat-indigo);
-$javatechie-covid19-tracker-accent: mat-palette($mat-pink, A200, A100, A400);
+$desafio-teia-frontend-primary: mat-palette($mat-indigo);
+$desafio-teia-frontend-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$javatechie-covid19-tracker-warn: mat-palette($mat-red);
+$desafio-teia-frontend-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$javatechie-covid19-tracker-theme: mat-light-theme($javatechie-covid19-tracker-primary, $javatechie-covid19-tracker-accent, $javatechie-covid19-tracker-warn);
+$desafio-teia-frontend-theme: mat-light-theme($desafio-teia-frontend-primary, $desafio-teia-frontend-accent, $desafio-teia-frontend-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($javatechie-covid19-tracker-theme);
+@include angular-material-theme($desafio-teia-frontend-theme);
+
+
 

@@ -1,0 +1,9 @@
+table{
+    width: 100%;
+}
+div{
+    width: 95%;
+}
+th.mat-sort-header-sorted {
+    color: black;
+  }
