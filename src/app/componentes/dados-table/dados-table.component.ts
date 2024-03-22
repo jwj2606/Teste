@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { DesafioTeiaService } from '../desafio-teia.service';
+import { DesafioTeiaService } from '../../desafio-teia.service';
 import { CamposTabela } from 'src/camposTabela';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';

@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to javatechie-covid19-tracker!');
+    expect(page.getTitleText()).toEqual('Welcome to desafio-teia-frontend!');
   });
 
   afterEach(async () => {

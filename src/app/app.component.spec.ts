@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'javatechie-covid19-tracker'`, () => {
+  it(`should have as title 'desafio-teia-frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('javatechie-covid19-tracker');
+    expect(app.title).toEqual('desafio-teia-frontend');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to javatechie-covid19-tracker!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to desafio-teia-frontend!');
   });
 });
