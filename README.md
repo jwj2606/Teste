@@ -38,7 +38,7 @@ A partir dessa interface, o usuário poderá realizar as seguintes ações:
 Pré-requisitos: npm
 
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/jwj2606/desafioTeia_c086047.git
 
 # entrar na pasta do projeto 
 cd desafio-teia-frontend
