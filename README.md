@@ -24,58 +24,33 @@ A partir dessa interface, o usuário poderá realizar as seguintes ações:
 [![](https://mermaid.ink/img/pako:eNqNkkFu2zAQRa8y4CoBLAPJ0osCSuQ0dus4gNRNpSzG4igmQHFUikxRSD5NFzlAj-CLlZLhJg4SoNKGePP_8JOcTpQsScxEpflnuUXrIEsKA-GL87hp4MaycXMjHyCKPvUt2Se1f-YeFp2kFivFkSOF07FQ0tS1u1F4ARFY-uGpdT1cncX3C8jmi_j849Yl1w0bMo56WHYSJbeRw42m6b_K0P3jBmEr65232MOXzuDTBu3_qb92FbOjo_oKBgFcny3T9R0kcbJOzw-ovxxP1YY07ZASDobrsZjksd74Ghby4TWe52_ATZ4pp-mEfc6_WX1CbvNs6-uNQaXhpbYco9f7P9Lr8AarcE0Ox0sKwVbosmGZBJKytyXt3nXddQ0-KoP75_1vPvjuR-DYvu9Yd2wlnThSti6Ijz-AmIiabI1KhmHqBlIIt6WaCjELS0kVeu0KUZhdkKJ3nP4ypZiFV6CJ8E04CSUKHy3WYlahbgMlqUKm1WFAxzmdiAbNd-ajZvcXourqow?type=png)](https://mermaid.live/edit#pako:eNqNkkFu2zAQRa8y4CoBLAPJ0osCSuQ0dus4gNRNpSzG4igmQHFUikxRSD5NFzlAj-CLlZLhJg4SoNKGePP_8JOcTpQsScxEpflnuUXrIEsKA-GL87hp4MaycXMjHyCKPvUt2Se1f-YeFp2kFivFkSOF07FQ0tS1u1F4ARFY-uGpdT1cncX3C8jmi_j849Yl1w0bMo56WHYSJbeRw42m6b_K0P3jBmEr65232MOXzuDTBu3_qb92FbOjo_oKBgFcny3T9R0kcbJOzw-ovxxP1YY07ZASDobrsZjksd74Ghby4TWe52_ATZ4pp-mEfc6_WX1CbvNs6-uNQaXhpbYco9f7P9Lr8AarcE0Ox0sKwVbosmGZBJKytyXt3nXddQ0-KoP75_1vPvjuR-DYvu9Yd2wlnThSti6Ijz-AmIiabI1KhmHqBlIIt6WaCjELS0kVeu0KUZhdkKJ3nP4ypZiFV6CJ8E04CSUKHy3WYlahbgMlqUKm1WFAxzmdiAbNd-ajZvcXourqow)
 
 # Tecnologias utilizadas
-## Back end
-- Java
-- Spring Boot
-- JPA / Hibernate
-- Maven
 ## Front end
 - HTML / CSS / JS / TypeScript
-- ReactJS
-- React Native
-- Apex Charts
-- Expo
+- Angular CLI
+- NodeJs
+
 ## Implantação em produção
-- Back end: Heroku
-- Front end web: Netlify
-- Banco de dados: Postgresql
+- Front end web: AWS S3
 
 # Como executar o projeto
 
-## Back end
-Pré-requisitos: Java 11
-
-```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
-
-# entrar na pasta do projeto back end
-cd backend
-
-# executar o projeto
-./mvnw spring-boot:run
-```
-
 ## Front end web
-Pré-requisitos: npm / yarn
+Pré-requisitos: npm
 
-```bash
 # clonar repositório
 git clone https://github.com/devsuperior/sds1-wmazoni
 
-# entrar na pasta do projeto front end web
-cd front-web
+# entrar na pasta do projeto 
+cd desafio-teia-frontend
 
 # instalar dependências
-yarn install
+npm install
 
 # executar o projeto
-yarn start
+npm start
 ```
 
 # Autor
+Jonathan Barroso Félix
 
-Wellington Mazoni de Andrade
-
-https://www.linkedin.com/in/wmazoni
 
