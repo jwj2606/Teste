@@ -18,7 +18,7 @@ A partir dessa interface, o usuário poderá realizar as seguintes ações:
 - Possibilidade de exportação dos dados nos formatos excel, csv, json e txt
 
 ## Layout App
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+![Mobile 1](https://github.com/desafioTeia_c086047/assets/imgApp.png) 
 
 # Tecnologias utilizadas
 ## Back end
