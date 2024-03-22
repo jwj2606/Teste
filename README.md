@@ -5,9 +5,17 @@
 
 [https://wmazoni-sds1.netlify.app](http://desafio-teia-frontend.s3-website-sa-east-1.amazonaws.com/)
 
-Desafio Teia - Desenvolvedor FrontEnd é uma aplicação frontend construída para em resposta à fase de desafio do projeto TEIA.
+Desafio Teia - Desenvolvedor FrontEnd é uma aplicação frontend construída em resposta à fase de desafio do projeto TEIA.
 
-A aplicação consiste em uma pesquisa de preferência de games, onde os dados são coletados no app mobile, e depois são listados no app web, que também apresenta um dashboard com gráficos baseados nestes dados.
+A aplicação consiste em consumir uma api (https://jsonplaceholder.typicode.com/photos/) disponibilizada para o desafio, e a partir dela disponibilizar os dados de forma dinâmica na interface do usuário.
+
+A partir dessa interface, o usuário poderá realizar as seguintes ações:
+- Navegação via paginação dos dados
+- Possibilidade de alteração da quantidade de registros visíveis
+- Ordenamento dos dados através de todos os campos disponibilizados
+- Pesquisa livre de texto em todos os campos disponibilizados
+- Possibilidade de testar a exclusão de todos os dados, assim como carregar novamente os dados
+- Possibilidade de exportação dos dados nos formatos excel, csv, json e txt
 
 ## Layout mobile
 ![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
